@@ -1,6 +1,6 @@
 .header {
   padding: 30px 80px 40px;
-  background: center/no-repeat #fff url(../images/background_header.svg);
+  background: #fff url(../images/background_header.svg) no-repeat center/cover;
   position: relative;
   height: 800px;
   display: flex;
@@ -10,6 +10,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  z-index: 0;
 }
 
 .header__title {
@@ -32,6 +33,9 @@
 .header__description {
   margin: 28px 0 0;
   max-width: 683px;
+  font-family: "Noto Serif", "times new roman", serif;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .header__image {
@@ -40,6 +44,7 @@
   right: 5px;
   width: 646px;
   height: 568px;
+  z-index: -1;
 }
 
 .header__footer {
@@ -51,9 +56,7 @@
 
 .header__paragraph {
   margin: 0;
-  font-family: "noto serif", "times new roman", serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
+  font-weight: 500;
+  color: #6f6f6f;
 }
